@@ -1,10 +1,10 @@
 # DevOps Templates
 
-Plantillas y configuraciones reutilizables para estandarizar la creación, desarrollo, integración y despliegue de proyectos de software.
+Colección de plantillas y configuraciones reutilizables para estandarizar el desarrollo, integración y despliegue de proyectos de software.
 
 ## Objetivo
 
-Centralizar configuraciones y automatizaciones para evitar repetir tareas en cada proyecto y mantener buenas prácticas de desarrollo.
+Centralizar configuraciones y automatizaciones para evitar repetir tareas en cada proyecto y mantener buenas prácticas de desarrollo, seguridad y despliegue.
 
 ## Contenido
 
@@ -12,9 +12,10 @@ Centralizar configuraciones y automatizaciones para evitar repetir tareas en cad
 |---|---|
 | `base/` | Configuraciones generales de Git, GitHub, seguridad y documentación. |
 | `docker/` | Dockerfiles y configuraciones de Docker Compose. |
-| `ci/` | Automatización de integración continua. |
-| `cd/` | Automatización de entrega y despliegue continuo. |
-| `docs/` | Guías de configuración y utilización. |
+| `ci/` | Workflows de integración continua con GitHub Actions. |
+| `cd/` | Workflows para publicación de imágenes Docker y despliegue en VPS. |
+
+Cada directorio incluye documentación específica sobre el uso y adaptación de sus plantillas.
 
 ## Tecnologías
 
@@ -23,9 +24,10 @@ Las plantillas están orientadas inicialmente a:
 - .NET / ASP.NET Core
 - Node.js
 - Python
-- Angular y otros frameworks frontend
+- PostgreSQL
 - Docker y Docker Compose
 - GitHub Actions
+- GitHub Container Registry (GHCR)
 
 ## Uso
 
@@ -39,7 +41,9 @@ cd mi-proyecto
 git init
 ```
 
-Después, se seleccionan las plantillas necesarias del repositorio y se adaptan a la estructura y tecnologías del proyecto.
+Después, seleccionar las plantillas necesarias de este repositorio, copiarlas al proyecto y adaptar sus configuraciones.
+
+No todas las plantillas son obligatorias. Cada proyecto debe utilizar únicamente las que correspondan a su arquitectura y tecnologías.
 
 ## Principios
 
@@ -47,8 +51,9 @@ Después, se seleccionan las plantillas necesarias del repositorio y se adaptan 
 - Automatización de tareas repetitivas.
 - Seguridad desde el inicio.
 - Documentación clara.
-- Configuraciones probadas antes de reutilizarlas.
+- Adaptabilidad a diferentes proyectos.
+- Verificación de las plantillas antes de utilizarlas en producción.
 
 ## Estado
 
-Proyecto en desarrollo. Las plantillas se incorporarán progresivamente y se probarán en proyectos reales antes de considerarse estables.
+Proyecto en desarrollo. Las plantillas se revisarán y probarán progresivamente en proyectos reales antes de considerarse estables.
