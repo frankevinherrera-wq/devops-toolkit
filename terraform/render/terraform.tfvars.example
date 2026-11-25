@@ -1,0 +1,9 @@
+service_name = "mi-api"
+
+docker_image = "ghcr.io/usuario/mi-api"
+
+docker_image_tag = "latest"
+
+region = "oregon"
+
+plan = "starter"

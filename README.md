@@ -13,7 +13,9 @@ Centralizar configuraciones y automatizaciones para evitar repetir tareas en cad
 | `base/` | Configuraciones generales de Git, GitHub, seguridad y documentación. |
 | `docker/` | Dockerfiles y configuraciones de Docker Compose. |
 | `ci/` | Workflows de integración continua con GitHub Actions. |
-| `cd/` | Workflows para publicación de imágenes Docker y despliegue en VPS. |
+| `cd/` | Workflows para publicación de imágenes Docker y despliegue en VPS y plataformas cloud. |
+| `terraform/` | Plantillas de infraestructura como código utilizando Terraform. |
+| `blueprints/` | Configuraciones declarativas para desplegar servicios mediante Render Blueprints. |
 
 Cada directorio incluye documentación específica sobre el uso y adaptación de sus plantillas.
 
@@ -28,6 +30,8 @@ Las plantillas están orientadas inicialmente a:
 - Docker y Docker Compose
 - GitHub Actions
 - GitHub Container Registry (GHCR)
+- Terraform
+- Render
 
 ## Uso
 
@@ -56,4 +60,4 @@ No todas las plantillas son obligatorias. Cada proyecto debe utilizar únicament
 
 ## Estado
 
-Proyecto en desarrollo. Las plantillas se revisarán y probarán progresivamente en proyectos reales antes de considerarse estables.
+Proyecto en desarrollo.
